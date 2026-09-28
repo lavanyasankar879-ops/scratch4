@@ -1,0 +1,166 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0,
+maximum-scale=1.0,
+user-scalable=no">
+
+<title>Remember the Date ❤️</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+    radial-gradient(
+        circle at top,
+        #fff7f8 0%,
+        #f4d1da 45%,
+        #8e294b 100%
+    );
+
+    font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+}
+
+.container {
+    width: 92%;
+    max-width: 520px;
+    text-align: center;
+    padding: 25px;
+}
+
+.title {
+    color: #7c2143;
+    font-size: 34px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+
+    text-shadow:
+        1px 1px 0 #ffffff,
+        2px 3px 5px rgba(80,20,40,.25);
+}
+
+.subtitle {
+    color: #7c5260;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SCRATCH CARD
+========================= */
+
+.card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.55;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    border: 3px solid #d7ad61;
+
+    background: #f8dfe5;
+
+    box-shadow:
+        0 25px 55px rgba(70,10,30,.30),
+        0 8px 15px rgba(90,30,50,.18),
+        inset 0 0 25px rgba(255,255,255,.8);
+}
+
+
+/* =========================
+   3D REVEALED CARD
+========================= */
+
+.message {
+
+    position: absolute;
+
+    inset: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            #fffdf9 0%,
+            #f9e7ea 45%,
+            #e6b7c4 100%
+        );
+
+    color: #7c2143;
+
+    border: 2px solid #d6ae66;
+
+    box-shadow:
+
+        0 12px 20px rgba(70,20,40,.25),
+
+        inset 0 0 25px
+        rgba(255,255,255,.9);
+
+    transform:
+        perspective(900px)
+        rotateX(2deg)
+        translateZ(10px);
+
+    animation:
+        cardFloat 4s ease-in-out infinite;
+}
+
+
+/* Floating 3D effect */
+
+@keyframes cardFloat {
+
+    0%, 100% {
+
+        transform:
+        perspective(900px)
+        rotateX(2deg)
+        translateY(0)
+        translateZ(10px);
+
+    }
+
+    50% {
+
+        transform:
+        perspective(900px)
+        rotateX(2deg)
+        translateY(-5px)
+```
